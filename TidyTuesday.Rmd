@@ -1,0 +1,321 @@
+---
+title: "Tidy Tuesday Submission"
+author: "Kelsey Matsik"
+date: "2024-04-28"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo = FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+# Data Summary 
+
+Read about the data, outer_space_objects.csv:
+<https://github.com/rfordatascience/tidytuesday/tree/master/data/2024/2024-04-23>  
+
+This data set contains information on the number of objects launched in space by different entities and countries from 1956 to 2023. "Objects" refers to satellites, probes, landers, crewed spacecrafts, and space station flight elements launched into or beyond Earth's orbit. The data was collected by the United Nations Office for Outer Space Affairs in 2024 and cleaned by Our World in Data. The data contains four variables: Entity (entity, country, or other agency/organization), Code (entity code), Year, or num_objects (annual number of objects launched into outer space). 
+
+For each of my visualizations, I created a cum_num_objects column, which added the 
+number of space objects for each entity over the years in the data. 
+
+
+# Visualizations 
+
+## Viz 1 
+Link to Shiny App:  
+<https://kelscam.shinyapps.io/TidyTuesdayApp/> 
+
+```{r echo = FALSE, out.width="100%", fig.align='center'}
+library(knitr)
+include_graphics("TTAppa.png")
+```
+
+```{r echo = FALSE, out.width="100%", fig.align='center'}
+include_graphics("TTAppb.png")
+```
+
+
+## Viz 2 
+
+```{r echo = FALSE}
+library(dplyr)
+library(plotly)
+library(viridis)
+
+df <- read.csv("~/Desktop/STAT 3280/Tidy Tuesday/outer_space_objects.csv") 
+```
+
+```{r echo = FALSE}
+orgs <- c("APSCO", "Arabsat", "EUMETSAT", "European Space Agency", "Eutelsat", "Inmarsat", "Intelsat", "Intersputnik", "NATO", "RASCOM", "Sea Launch", "Starsem")
+
+org_df <- df %>% 
+  filter(Entity %in% orgs)
+
+org_df <- org_df %>% 
+  arrange(Year) %>% 
+  group_by(Entity) %>% 
+  mutate(cum_num_objects = cumsum(num_objects))
+
+org_df2 <- org_df %>% 
+  filter(! Entity %in% c("RASCOM", "Sea Launch", "Starsem", "APSCO", "Intersputnik"))
+```
+
+```{r echo = FALSE}
+p2colors <- viridisLite::viridis(7)
+
+plot2 <- plot_ly(org_df2, x = ~Year, y = ~cum_num_objects, color = ~Entity, colors = p2colors, 
+                 text = ~paste(Entity, Year, ": ", cum_num_objects), hoverinfo = "text",
+                 type = "scatter", mode = "lines+markers") %>% 
+  # Customizing title and axis labels
+  layout(title = list(text = "Top 8 Agencies' Total Number of Objects in Space 1957-2023", size = 18), 
+         xaxis = list(titlefont = list(size = 16), tickfont = list(size = 14)),
+         yaxis = list(title = "Number of Objects", titlefont = list(size = 16), tickfont = list(size = 14)),
+         showlegend = TRUE) %>% 
+  # Customizing x-axis 
+  layout(xaxis = list(
+    tickmode = "array", 
+    tickvals = seq(1957, 2023, by = 10), 
+    ticktext = seq(1950, 2030, by = 10)
+  ))
+
+plot2
+```
+
+# Description 
+
+For both of my visualizations, I chose to focus on the top countries/entities in order to minimize clutter. Also, though all entities in the data set contribute to showing the relative increase in space exploration over the last 70 years, the top countries and entities show the most dramatic and observable increase. \newline
+In Viz 1, "top 10 countries" refers to the top 10 countries that have launched the most space objects from 1957-2023. 
+In Viz 2, "top 8 agencies" refers to the top 8 entities, such as government or private organizations, that have launched the most space objects from 1957-2023.
+
+
+**Viz 1** is a Shiny App that shows the top 10 countries' total number of objects in space over a specified range of years. The app contains a slider input which allows the user to toggle between different year ranges with the default range set from 1957 to 2023 (all years in the data). This viz is effective because it allows the viewer to see the the increase in total space objects over the past 70 years as well as the how the top 10 countries have increased their numbers of space objects. More specifically, the viewer can see the time at which the number of objects in space exponentially increased and which countries primarily drove that change. The viewer can set different year ranges to zoom in or zoom out on the data and contextualize trends of relative stability or increase of the total number of space objects. \newline
+
+Around 2017, the total space objects began to exponentially increase. Looking at the fill of the bars, India is the country that appeared to drive the drastic uptick. From 2017 to 2023, the total number of objects in space launched by the top 10 countries more than doubled; in 2017, less than 7,500 objects were launched in space, but by 2023, this number rose to over 15,000. 
+
+\newline
+
+**Viz 2** is an interactive line plot which shows the total number of space objects launched by the top 8 entities that are *not* countries over the past 70 years. Comparing the number of space objects launched by countries versus other entities, such as government or private organizations, is important in understanding who is primarily driving human space exploration. Viz 2 reveals that while some organizations have had constant to little no increase in the number of objects they've launched, others have participated in dramatic increases. Looking at the plot, Intelstat and the European Space Agency launched similar numbers of objects in space until 2004, when Intelsat's growth leveled off and European Space Agency continued to increase, having launched over 40 more space objects than Intelsat today. \newline 
+
+This viz is effective for three reasons. First, the time series design allows the user to see the relative increases of entities' participation in space exploration from 1957 to 2023. Second, interactive features allow the user to hover over a line and see the year, entity, and number of space objects they'd launched, minimizing visual load by elminating the need to look between the data, legend, and axes. Third, the aesthetic properties of the plot, such as color, font size, axis labels, and line plot with data points are informative and effective in communicating information without overwhelming the user. 
+
+
+
+# Appendix
+The appendix includes all code used to perform exploratory data analysis and create the visualizations.
+
+```{r}
+library(dplyr)
+library(plotly)
+library(ggplot2)
+library(viridis)
+```
+
+```{r}
+df <- read.csv("~/Desktop/STAT 3280/Tidy Tuesday/outer_space_objects.csv") 
+head(df)
+```
+
+```{r}
+table(df$Entity)
+```
+
+```{r}
+table(df$Code)
+```
+
+
+```{r}
+table(df$Year)
+```
+
+```{r}
+# Getting countries with top 10 space objects
+sorted_objects <- df[order(-df$num_objects), ]
+top10 <- sorted_objects[1:10, ]
+top10 
+```
+
+### Viz 1 Code
+
+```{r}
+# Sort data by unique entities with highest number of space objects
+df_sorted <- df %>%
+  group_by(Entity) %>% 
+  summarize(num_objects = n()) %>% 
+  arrange(desc(num_objects)) 
+```
+
+```{r}
+# Get top 15 entities
+top_entities <- df_sorted[1:15,]
+```
+
+```{r}
+# Filter out entities that aren't countries 
+top_countries <- top_entities %>% 
+  filter(!(Entity %in% c("World", "European Space Agency", "Intelsat")))
+
+# Get only top 10 countries
+top10_countries <- top_countries[1:10, ] 
+top10_countries
+```
+
+```{r}
+# Create df with only top 10 countries who have the most total space objects 
+top10df <- df %>% 
+  filter(Entity %in% top10_countries$Entity)
+
+```
+
+```{r}
+# Get cumulative number of objects in space over the years for each entity
+top10df <- top10df %>% 
+  arrange(Year) %>% 
+  group_by(Entity) %>%
+  mutate(cum_num_objects = cumsum(num_objects))
+
+# top10df
+```
+
+```{r}
+# Export data to be used in Shiny App
+write.csv(top10df, "~/Desktop/STAT 3280/Tidy Tuesday/top10_countries.csv")
+```
+
+```{r}
+# Original plot to be used in Shiny App
+p1 <- ggplot(top10df, aes(x = Year, y = cum_num_objects, fill = Entity)) + 
+  geom_bar(stat = "identity") + 
+  scale_fill_viridis_d() + 
+  theme_minimal() + 
+  labs(title = "Top 10 Countries' Space Objects from 1957-2023", y = "Total Number of Objects in Space", fill = "Country") + 
+  theme(plot.title = element_text(hjust = 0.5, size = 20), 
+        axis.title = element_text(size = 18), 
+        axis.text = element_text(size = 16))
+        
+p1
+```
+
+
+```{r}
+# Shiny App Code 
+
+library(shiny)
+library(ggplot2)
+library(viridis)
+
+# Define UI
+ui <- fluidPage(
+  sidebarLayout(
+    sidebarPanel(
+      uiOutput("year_slider")
+      ), 
+    mainPanel(
+      plotOutput("plot")
+    )
+  )
+)
+
+# Define server
+
+server <- function(input, output) {
+  
+  df <- read.csv("top10_countries.csv") 
+  
+  output$year_slider <- renderUI({
+    sliderInput("year_range", "Select Year Range:",
+                min = min(df$Year), max = max(df$Year),
+                value = c(min(df$Year), max(df$Year)), 
+                step = 1)
+    
+  })
+  output$plot <- renderPlot({
+    # Filter data based on selected year range
+    filtered_df <- subset(df, Year >= input$year_range[1] & Year <= input$year_range[2])
+    
+    # Plot
+    p <- ggplot(filtered_df, aes(x = Year, y = cum_num_objects, fill = Entity)) + 
+      geom_bar(stat = "identity") + 
+      scale_fill_viridis_d() + 
+      theme_minimal() + 
+      labs(title = paste("Top 10 Countries' Total Number of Objects in Space from", input$year_range[1], "-", input$year_range[2]),
+           y = "Number of Objects in Space", fill = "Country") + 
+      theme(plot.title = element_text(hjust = 0.5, size = 22), 
+            axis.title = element_text(size = 18), 
+            axis.text = element_text(size = 16))
+    
+    p
+  })
+}
+
+# Run the application
+shinyApp(ui = ui, server = server)
+```
+
+### Viz 2 Code
+
+```{r}
+# table(df$Entity)
+```
+
+```{r}
+# Create dataframe of entities that aren't countries, regions, or 'World' 
+orgs <- c("APSCO", "Arabsat", "EUMETSAT", "European Space Agency", "Eutelsat", "Inmarsat", "Intelsat", "Intersputnik", "NATO", "RASCOM", "Sea Launch", "Starsem")
+
+org_df <- df %>% 
+  filter(Entity %in% orgs)
+
+org_df
+```
+
+```{r}
+# Create column with cumulative number of space objects over the years 
+org_df <- org_df %>% 
+  arrange(Year) %>% 
+  group_by(Entity) %>% 
+  mutate(cum_num_objects = cumsum(num_objects))
+
+org_df
+```
+
+```{r}
+line_plot <- ggplot(org_df, aes(x = Year, y = cum_num_objects, color = Entity)) + 
+  geom_point() + geom_line()
+line_plot
+```
+
+```{r}
+# Removing agencies with low number of space objects / not present over several years
+org_df2 <- org_df %>% 
+  filter(! Entity %in% c("RASCOM", "Sea Launch", "Starsem", "APSCO", "Intersputnik"))
+```
+
+```{r}
+line_plot2 <- ggplot(org_df2, aes(x = Year, y = cum_num_objects, color = Entity)) + 
+  geom_point() + geom_line()
+line_plot2
+```
+
+```{r}
+# Making a plotly version of the above line plot 
+
+p2colors <- viridisLite::viridis(7)
+
+plot2 <- plot_ly(org_df2, x = ~Year, y = ~cum_num_objects, color = ~Entity, colors = p2colors,
+                 text = ~paste(Entity, Year, ": ", cum_num_objects), hoverinfo = "text",
+                 type = "scatter", mode = "lines+markers") %>% 
+  # Customizing title and axis labels
+  layout(title = list(text = "Top 8 Agencies' Total Number of Objects in Space 1957-2023", size = 18), 
+         xaxis = list(titlefont = list(size = 16), tickfont = list(size = 14)),
+         yaxis = list(title = "Number of Objects", titlefont = list(size = 16), tickfont = list(size = 14)),
+         showlegend = TRUE) %>% 
+  # Customizing x-axis 
+  layout(xaxis = list(
+    tickmode = "array", 
+    tickvals = seq(1957, 2023, by = 10), 
+    ticktext = seq(1950, 2030, by = 10)
+  ))
+
+plot2
+```
