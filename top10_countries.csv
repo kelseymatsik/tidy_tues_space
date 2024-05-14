@@ -1,0 +1,465 @@
+"","Entity","Code","Year","num_objects","cum_num_objects"
+"1","Russia","RUS",1957,2,2
+"2","Russia","RUS",1958,1,3
+"3","United States","USA",1958,7,7
+"4","Russia","RUS",1959,3,6
+"5","United States","USA",1959,11,18
+"6","Russia","RUS",1960,3,9
+"7","United States","USA",1960,17,35
+"8","Russia","RUS",1961,7,16
+"9","United States","USA",1961,31,66
+"10","Canada","CAN",1962,1,1
+"11","Russia","RUS",1962,20,36
+"12","United Kingdom","GBR",1962,1,1
+"13","United States","USA",1962,55,121
+"14","Russia","RUS",1963,17,53
+"15","United States","USA",1963,54,175
+"16","Italy","ITA",1964,2,2
+"17","Russia","RUS",1964,35,88
+"18","United Kingdom","GBR",1964,1,2
+"19","United States","USA",1964,71,246
+"20","Canada","CAN",1965,1,2
+"21","France","FRA",1965,3,3
+"22","Russia","RUS",1965,64,152
+"23","United States","USA",1965,96,342
+"24","France","FRA",1966,1,4
+"25","Russia","RUS",1966,44,196
+"26","United States","USA",1966,99,441
+"27","France","FRA",1967,2,6
+"28","Italy","ITA",1967,1,3
+"29","Russia","RUS",1967,66,262
+"30","United Kingdom","GBR",1967,1,3
+"31","United States","USA",1967,85,526
+"32","Russia","RUS",1968,74,336
+"33","United States","USA",1968,61,587
+"34","Canada","CAN",1969,1,3
+"35","Germany","DEU",1969,1,1
+"36","Russia","RUS",1969,70,406
+"37","United Kingdom","GBR",1969,2,5
+"38","United States","USA",1969,62,649
+"39","China","CHN",1970,1,1
+"40","France","FRA",1970,2,8
+"41","Germany","DEU",1970,1,2
+"42","Japan","JPN",1970,1,1
+"43","Russia","RUS",1970,88,494
+"44","United Kingdom","GBR",1970,1,6
+"45","United States","USA",1970,31,680
+"46","Canada","CAN",1971,1,4
+"47","China","CHN",1971,1,2
+"48","France","FRA",1971,2,10
+"49","Italy","ITA",1971,1,4
+"50","Japan","JPN",1971,2,3
+"51","Russia","RUS",1971,98,592
+"52","United Kingdom","GBR",1971,2,8
+"53","United States","USA",1971,46,726
+"54","Canada","CAN",1972,2,6
+"55","France","FRA",1972,1,11
+"56","Germany","DEU",1972,1,3
+"57","Japan","JPN",1972,1,4
+"58","Russia","RUS",1972,88,680
+"59","United States","USA",1972,37,763
+"60","Canada","CAN",1973,2,8
+"61","Russia","RUS",1973,109,789
+"62","United States","USA",1973,28,791
+"63","China","CHN",1974,1,3
+"64","France","FRA",1974,2,13
+"65","Germany","DEU",1974,4,7
+"66","Italy","ITA",1974,1,5
+"67","Japan","JPN",1974,1,5
+"68","Russia","RUS",1974,95,884
+"69","United Kingdom","GBR",1974,4,12
+"70","United States","USA",1974,19,810
+"71","Canada","CAN",1975,1,9
+"72","China","CHN",1975,3,6
+"73","France","FRA",1975,7,20
+"74","Germany","DEU",1975,2,9
+"75","India","IND",1975,1,1
+"76","Japan","JPN",1975,2,7
+"77","Russia","RUS",1975,111,995
+"78","United States","USA",1975,30,840
+"79","Canada","CAN",1976,1,10
+"80","China","CHN",1976,2,8
+"81","Germany","DEU",1976,1,10
+"82","Japan","JPN",1976,1,8
+"83","Russia","RUS",1976,121,1116
+"84","United States","USA",1976,26,866
+"85","France","FRA",1977,2,22
+"86","Italy","ITA",1977,1,6
+"87","Japan","JPN",1977,4,12
+"88","Russia","RUS",1977,104,1220
+"89","United States","USA",1977,24,890
+"90","Canada","CAN",1978,1,11
+"91","China","CHN",1978,1,9
+"92","Japan","JPN",1978,4,16
+"93","Russia","RUS",1978,119,1339
+"94","United States","USA",1978,35,925
+"95","India","IND",1979,1,2
+"96","Japan","JPN",1979,2,18
+"97","Russia","RUS",1979,101,1440
+"98","United Kingdom","GBR",1979,2,14
+"99","United States","USA",1979,19,944
+"100","India","IND",1980,1,3
+"101","Japan","JPN",1980,2,20
+"102","Russia","RUS",1980,110,1550
+"103","United States","USA",1980,16,960
+"104","China","CHN",1981,3,12
+"105","India","IND",1981,3,6
+"106","Japan","JPN",1981,3,23
+"107","Russia","RUS",1981,124,1674
+"108","United Kingdom","GBR",1981,2,16
+"109","United States","USA",1981,20,980
+"110","Canada","CAN",1982,2,13
+"111","China","CHN",1982,1,13
+"112","India","IND",1982,2,8
+"113","Japan","JPN",1982,1,24
+"114","Russia","RUS",1982,119,1793
+"115","United States","USA",1982,20,1000
+"116","Canada","CAN",1983,1,14
+"117","China","CHN",1983,1,14
+"118","Germany","DEU",1983,2,12
+"119","India","IND",1983,2,10
+"120","Japan","JPN",1983,3,27
+"121","Russia","RUS",1983,116,1909
+"122","United States","USA",1983,25,1025
+"123","Canada","CAN",1984,1,15
+"124","China","CHN",1984,3,17
+"125","France","FRA",1984,1,23
+"126","Germany","DEU",1984,1,13
+"127","Japan","JPN",1984,3,30
+"128","Russia","RUS",1984,115,2024
+"129","United Kingdom","GBR",1984,2,18
+"130","United States","USA",1984,31,1056
+"131","Canada","CAN",1985,1,16
+"132","China","CHN",1985,1,18
+"133","France","FRA",1985,1,24
+"134","Japan","JPN",1985,2,32
+"135","Russia","RUS",1985,119,2143
+"136","United States","USA",1985,30,1086
+"137","China","CHN",1986,2,20
+"138","France","FRA",1986,1,25
+"139","Japan","JPN",1986,4,36
+"140","Russia","RUS",1986,114,2257
+"141","United States","USA",1986,11,1097
+"142","China","CHN",1987,2,22
+"143","Germany","DEU",1987,1,14
+"144","Japan","JPN",1987,3,39
+"145","Russia","RUS",1987,116,2373
+"146","United States","USA",1987,10,1107
+"147","China","CHN",1988,4,26
+"148","France","FRA",1988,2,27
+"149","Germany","DEU",1988,1,15
+"150","India","IND",1988,3,13
+"151","Italy","ITA",1988,1,7
+"152","Japan","JPN",1988,2,41
+"153","Russia","RUS",1988,109,2482
+"154","United Kingdom","GBR",1988,1,19
+"155","United States","USA",1988,19,1126
+"156","Germany","DEU",1989,2,17
+"157","Japan","JPN",1989,4,45
+"158","Russia","RUS",1989,99,2581
+"159","United Kingdom","GBR",1989,2,21
+"160","United States","USA",1989,25,1151
+"161","China","CHN",1990,6,32
+"162","France","FRA",1990,2,29
+"163","Germany","DEU",1990,2,19
+"164","India","IND",1990,2,15
+"165","Japan","JPN",1990,7,52
+"166","Russia","RUS",1990,96,2677
+"167","United Kingdom","GBR",1990,5,26
+"168","United States","USA",1990,40,1191
+"169","Canada","CAN",1991,2,18
+"170","China","CHN",1991,1,33
+"171","France","FRA",1991,2,31
+"172","Germany","DEU",1991,1,20
+"173","India","IND",1991,1,16
+"174","Italy","ITA",1991,1,8
+"175","Japan","JPN",1991,2,54
+"176","Russia","RUS",1991,83,2760
+"177","United Kingdom","GBR",1991,1,27
+"178","United States","USA",1991,30,1221
+"179","Canada","CAN",1992,1,19
+"180","China","CHN",1992,2,35
+"181","France","FRA",1992,2,33
+"182","Germany","DEU",1992,1,21
+"183","India","IND",1992,2,18
+"184","Italy","ITA",1992,1,9
+"185","Japan","JPN",1992,4,58
+"186","Russia","RUS",1992,78,2838
+"187","United States","USA",1992,28,1249
+"188","China","CHN",1993,1,36
+"189","France","FRA",1993,3,36
+"190","Germany","DEU",1993,1,22
+"191","India","IND",1993,1,19
+"192","Italy","ITA",1993,2,11
+"193","Japan","JPN",1993,1,59
+"194","Russia","RUS",1993,59,2897
+"195","United States","USA",1993,31,1280
+"196","China","CHN",1994,5,41
+"197","Germany","DEU",1994,3,25
+"198","India","IND",1994,2,21
+"199","Japan","JPN",1994,4,63
+"200","Russia","RUS",1994,64,2961
+"201","United Kingdom","GBR",1994,2,29
+"202","United States","USA",1994,35,1315
+"203","Canada","CAN",1995,1,20
+"204","China","CHN",1995,1,42
+"205","France","FRA",1995,3,39
+"206","Germany","DEU",1995,2,27
+"207","India","IND",1995,2,23
+"208","Japan","JPN",1995,4,67
+"209","Russia","RUS",1995,36,2997
+"210","United States","USA",1995,40,1355
+"211","Canada","CAN",1996,1,21
+"212","China","CHN",1996,3,45
+"213","France","FRA",1996,1,40
+"214","Germany","DEU",1996,1,28
+"215","India","IND",1996,1,24
+"216","Italy","ITA",1996,2,13
+"217","Japan","JPN",1996,3,70
+"218","Russia","RUS",1996,28,3025
+"219","United States","USA",1996,41,1396
+"220","China","CHN",1997,7,52
+"221","Germany","DEU",1997,2,30
+"222","India","IND",1997,2,26
+"223","Japan","JPN",1997,7,77
+"224","Russia","RUS",1997,28,3053
+"225","United States","USA",1997,88,1484
+"226","China","CHN",1998,10,62
+"227","France","FRA",1998,1,41
+"228","Germany","DEU",1998,3,33
+"229","Japan","JPN",1998,3,80
+"230","Russia","RUS",1998,27,3080
+"231","United Kingdom","GBR",1998,1,30
+"232","United States","USA",1998,91,1575
+"233","Canada","CAN",1999,1,22
+"234","China","CHN",1999,11,73
+"235","France","FRA",1999,2,43
+"236","Germany","DEU",1999,2,35
+"237","India","IND",1999,2,28
+"238","Italy","ITA",1999,1,14
+"239","Japan","JPN",1999,1,81
+"240","Russia","RUS",1999,15,3095
+"241","United Kingdom","GBR",1999,2,32
+"242","United States","USA",1999,80,1655
+"243","Canada","CAN",2000,1,23
+"244","China","CHN",2000,6,79
+"245","Germany","DEU",2000,3,38
+"246","India","IND",2000,1,29
+"247","Italy","ITA",2000,3,17
+"248","Japan","JPN",2000,3,84
+"249","Russia","RUS",2000,23,3118
+"250","United Kingdom","GBR",2000,4,36
+"251","United States","USA",2000,56,1711
+"252","Canada","CAN",2001,1,24
+"253","China","CHN",2001,2,81
+"254","France","FRA",2001,1,44
+"255","Germany","DEU",2001,1,39
+"256","India","IND",2001,2,31
+"257","Italy","ITA",2001,1,18
+"258","Japan","JPN",2001,4,88
+"259","Russia","RUS",2001,30,3148
+"260","United Kingdom","GBR",2001,1,37
+"261","United States","USA",2001,34,1745
+"262","Canada","CAN",2002,2,26
+"263","China","CHN",2002,7,88
+"264","France","FRA",2002,3,47
+"265","Germany","DEU",2002,5,44
+"266","India","IND",2002,2,33
+"267","Italy","ITA",2002,1,19
+"268","Japan","JPN",2002,10,98
+"269","Russia","RUS",2002,19,3167
+"270","United States","USA",2002,33,1778
+"271","Canada","CAN",2003,3,29
+"272","China","CHN",2003,9,97
+"273","India","IND",2003,4,37
+"274","Japan","JPN",2003,7,105
+"275","Russia","RUS",2003,22,3189
+"276","United Kingdom","GBR",2003,1,38
+"277","United States","USA",2003,28,1806
+"278","Canada","CAN",2004,1,30
+"279","China","CHN",2004,11,108
+"280","France","FRA",2004,7,54
+"281","India","IND",2004,1,38
+"282","Italy","ITA",2004,1,20
+"283","Japan","JPN",2004,2,107
+"284","Russia","RUS",2004,19,3208
+"285","United States","USA",2004,21,1827
+"286","Canada","CAN",2005,1,31
+"287","China","CHN",2005,7,115
+"288","France","FRA",2005,1,55
+"289","Germany","DEU",2005,1,45
+"290","India","IND",2005,3,41
+"291","Japan","JPN",2005,5,112
+"292","Russia","RUS",2005,19,3227
+"293","United Kingdom","GBR",2005,3,41
+"294","United States","USA",2005,21,1848
+"295","China","CHN",2006,13,128
+"296","France","FRA",2006,3,58
+"297","Germany","DEU",2006,1,46
+"298","Japan","JPN",2006,11,123
+"299","Russia","RUS",2006,16,3243
+"300","United States","USA",2006,36,1884
+"301","Canada","CAN",2007,2,33
+"302","China","CHN",2007,10,138
+"303","Germany","DEU",2007,3,49
+"304","India","IND",2007,5,46
+"305","Italy","ITA",2007,3,23
+"306","Japan","JPN",2007,6,129
+"307","Russia","RUS",2007,18,3261
+"308","United Kingdom","GBR",2007,2,43
+"309","United States","USA",2007,46,1930
+"310","Canada","CAN",2008,5,38
+"311","China","CHN",2008,17,155
+"312","France","FRA",2008,1,59
+"313","Germany","DEU",2008,9,58
+"314","India","IND",2008,4,50
+"315","Italy","ITA",2008,1,24
+"316","Japan","JPN",2008,6,135
+"317","Russia","RUS",2008,21,3282
+"318","United Kingdom","GBR",2008,3,46
+"319","United States","USA",2008,24,1954
+"320","Canada","CAN",2009,2,40
+"321","China","CHN",2009,8,163
+"322","France","FRA",2009,3,62
+"323","Germany","DEU",2009,4,62
+"324","India","IND",2009,4,54
+"325","Italy","ITA",2009,1,25
+"326","Japan","JPN",2009,12,147
+"327","Russia","RUS",2009,30,3312
+"328","United Kingdom","GBR",2009,3,49
+"329","United States","USA",2009,38,1992
+"330","China","CHN",2010,20,183
+"331","France","FRA",2010,9,71
+"332","Germany","DEU",2010,2,64
+"333","India","IND",2010,2,56
+"334","Italy","ITA",2010,1,26
+"335","Japan","JPN",2010,9,156
+"336","Russia","RUS",2010,24,3336
+"337","United Kingdom","GBR",2010,3,52
+"338","United States","USA",2010,35,2027
+"339","Canada","CAN",2011,2,42
+"340","China","CHN",2011,20,203
+"341","France","FRA",2011,19,90
+"342","India","IND",2011,7,63
+"343","Italy","ITA",2011,1,27
+"344","Japan","JPN",2011,4,160
+"345","Russia","RUS",2011,24,3360
+"346","United Kingdom","GBR",2011,2,54
+"347","United States","USA",2011,29,2056
+"348","Canada","CAN",2012,2,44
+"349","China","CHN",2012,26,229
+"350","France","FRA",2012,5,95
+"351","Germany","DEU",2012,1,65
+"352","India","IND",2012,2,65
+"353","Italy","ITA",2012,4,31
+"354","Japan","JPN",2012,9,169
+"355","Russia","RUS",2012,23,3383
+"356","United Kingdom","GBR",2012,4,58
+"357","United States","USA",2012,33,2089
+"358","Canada","CAN",2013,4,48
+"359","China","CHN",2013,19,248
+"360","France","FRA",2013,8,103
+"361","Germany","DEU",2013,6,71
+"362","India","IND",2013,5,70
+"363","Italy","ITA",2013,1,32
+"364","Japan","JPN",2013,5,174
+"365","Russia","RUS",2013,29,3412
+"366","United Kingdom","GBR",2013,7,65
+"367","United States","USA",2013,80,2169
+"368","Canada","CAN",2014,4,52
+"369","China","CHN",2014,25,273
+"370","France","FRA",2014,2,105
+"371","Germany","DEU",2014,1,72
+"372","India","IND",2014,4,74
+"373","Italy","ITA",2014,2,34
+"374","Japan","JPN",2014,24,198
+"375","Russia","RUS",2014,35,3447
+"376","United Kingdom","GBR",2014,10,75
+"377","United States","USA",2014,95,2264
+"378","Canada","CAN",2015,2,54
+"379","China","CHN",2015,38,311
+"380","India","IND",2015,4,78
+"381","Italy","ITA",2015,1,35
+"382","Japan","JPN",2015,4,202
+"383","Russia","RUS",2015,27,3474
+"384","United Kingdom","GBR",2015,7,82
+"385","United States","USA",2015,104,2368
+"386","Canada","CAN",2016,3,57
+"387","China","CHN",2016,38,349
+"388","France","FRA",2016,2,107
+"389","Germany","DEU",2016,2,74
+"390","India","IND",2016,12,90
+"391","Italy","ITA",2016,1,36
+"392","Japan","JPN",2016,11,213
+"393","Russia","RUS",2016,14,3488
+"394","United Kingdom","GBR",2016,1,83
+"395","United States","USA",2016,105,2473
+"396","China","CHN",2017,32,381
+"397","France","FRA",2017,2,109
+"398","Germany","DEU",2017,2,76
+"399","India","IND",2017,9,99
+"400","Italy","ITA",2017,4,40
+"401","Japan","JPN",2017,16,229
+"402","Russia","RUS",2017,25,3513
+"403","United Kingdom","GBR",2017,7,90
+"404","United States","USA",2017,286,2759
+"405","Canada","CAN",2018,5,62
+"406","China","CHN",2018,95,476
+"407","France","FRA",2018,2,111
+"408","Germany","DEU",2018,12,88
+"409","India","IND",2018,10,109
+"410","Italy","ITA",2018,1,41
+"411","Japan","JPN",2018,19,248
+"412","Russia","RUS",2018,23,3536
+"413","United Kingdom","GBR",2018,12,102
+"414","United States","USA",2018,190,2949
+"415","Canada","CAN",2019,3,65
+"416","China","CHN",2019,82,558
+"417","France","FRA",2019,7,118
+"418","Germany","DEU",2019,11,99
+"419","India","IND",2019,10,119
+"420","Italy","ITA",2019,3,44
+"421","Japan","JPN",2019,21,269
+"422","Russia","RUS",2019,30,3566
+"423","United Kingdom","GBR",2019,14,116
+"424","United States","USA",2019,362,3311
+"425","Canada","CAN",2020,6,71
+"426","China","CHN",2020,73,631
+"427","France","FRA",2020,4,122
+"428","Germany","DEU",2020,5,104
+"429","India","IND",2020,3,122
+"430","Italy","ITA",2020,1,45
+"431","Japan","JPN",2020,9,278
+"432","Russia","RUS",2020,24,3590
+"433","United Kingdom","GBR",2020,104,220
+"434","United States","USA",2020,984,4295
+"435","Canada","CAN",2021,11,82
+"436","China","CHN",2021,110,741
+"437","France","FRA",2021,9,131
+"438","Germany","DEU",2021,9,113
+"439","India","IND",2021,5,127
+"440","Italy","ITA",2021,7,52
+"441","Japan","JPN",2021,24,302
+"442","Russia","RUS",2021,21,3611
+"443","United Kingdom","GBR",2021,289,509
+"444","United States","USA",2021,1232,5527
+"445","Canada","CAN",2022,9,91
+"446","China","CHN",2022,182,923
+"447","France","FRA",2022,10,141
+"448","Germany","DEU",2022,5,118
+"449","India","IND",2022,11,138
+"450","Italy","ITA",2022,11,63
+"451","Japan","JPN",2022,12,314
+"452","Russia","RUS",2022,50,3661
+"453","United Kingdom","GBR",2022,112,621
+"454","United States","USA",2022,1939,7466
+"455","Canada","CAN",2023,11,102
+"456","China","CHN",2023,128,1051
+"457","France","FRA",2023,10,151
+"458","Germany","DEU",2023,2,120
+"459","India","IND",2023,6,144
+"460","Italy","ITA",2023,11,74
+"461","Japan","JPN",2023,11,325
+"462","Russia","RUS",2023,62,3723
+"463","United Kingdom","GBR",2023,144,765
+"464","United States","USA",2023,2166,9632
